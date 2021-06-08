@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- This tells the browser we are using html5 -->
+<html>
+  <head>
+    <title>Class 1 Lab01-B</title>
+    <style>
+     body {background-color:rgb(214, 123, 58);}
+     h1 {color:darkred; border-style: solid; text-align: center; background-color: rgb(189, 128, 16)}
+     p {border-style: dotted; background-color: darksalmon; border-color: rgb(233, 229, 31); text-align:center; color: darkslategrey;} 
+     li {border-style:groove; border-color:black;}                           
+    </style>
+  </head>
+  <body>      
+    <header>
+    <center><img style="width: 400px" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Cat_Laptop_-_Idil_Keysan_-_Wikimedia_Giphy_stickers_2019.gif" alt="typing cat"></center>
+    <h1>Lab 01-B: Getting Up and Running</h1>
+  </header>
+  <main>
+    <p>Use 4 Javascript prompts an create 4 questions.</p>
+    <ul>
+      <li style= color:blue;text-align:right;>Prompt 1: What's your name?</li>
+      <li style= color:snow;text-align:right>Prompt 2: Where are you from?</li>
+      <li style= color:blue;text-align:right>Prompt 3: Whats your dream job?</li>
+      <li style= color:snow;text-align:right>Prompt 4: Favorite place on earth?</li>
+    </ul>
+    <script>
+      console.log('We are going to test a bunch of strings!');
+      let userName = prompt('What is your name?');
+      let prompt2 = prompt('Where are you from, ' +  userName + '?');
+      let prompt3 = prompt('Well, ' + userName + ' from ' + prompt2 + ', ' + 'what is your dream job?');
+      let prompt4 = prompt('Awesome, ' + userName + ' from ' + prompt2 + ', ' + prompt3 + ' sounds fantastic! ' + 'What is your favorite place on earth?');
+      // prompt returns whatever the user enters in the text box
+      console.log('The users name is: ' + userName);
+      console.log(userName + ' is from ' + prompt2);
+      console.log(userName + 's' + ' dream job is ' + prompt3)
+      console.log(userName + 's' + ' favorite place is ' + prompt4);
+      alert = alert('Maybe, ' + userName + ' from ' + prompt2 + ' your dream job of ' + prompt3 + ' is in ' + prompt4 + '? ' + 'Reach for the Stars!!! - Woody from Toy Story');
+      // concatonation ties strings together, and allows you to add variables
+      // in javascript, there is an implied return to any function where we don't specify a return value: undefined
+    </script>
+    </main>
+    <footer>
+      
+    </footer>
+  </body>
+  
+</html>
